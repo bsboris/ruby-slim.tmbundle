@@ -148,7 +148,7 @@ patterns:
     comment: XML
     name: entity.name.tag.slim
 
-  - begin: (:\s)(\.|#|[a-zA-Z0-9]+)([\w-]+)?
+  - begin: (:\s)(\.|#|[-a-zA-Z0-9]+)([\w-]+)?
     end: $|(?!\.|#|=|-|~|/|\}|\]|\*|\s?[\*\{])
     comment: Inline HTML / 1 - colon; 2 - dot OR hash OR any combination of word, number; 3 - OPTIONAL any combination of word, number, dash or underscore (following a . or #)
     captures:
@@ -306,7 +306,7 @@ repository:
     - include: '#embedded-ruby'
     - include: '#entities'
   root-class-id-tag:
-    match: (\.|#)([\w\d\-]+)
+    match: (\.|#)([\w-]+)
     captures:
       '1':
         name: punctuation.separator.key-value.html
