@@ -29,6 +29,10 @@ section.underscore_class
 section.underscoreunderscore__class
 section.-leading-dash
 section-with-dashes.class
+section.ab.hover:cd
+section.ab.cd-1/2
+section.hover:cd
+section.cd-1/2
 
 / ID and Class Shortcut
 
@@ -44,6 +48,22 @@ section-with-dashes.class
 .underscoreunderscore__class
 .-leading-dash
 ._leading_underscore
+.ab.hover:cd
+.ab.cd-1/2
+.hover:cd
+.cd-1/2
+
+/ Inline
+h2: span Text
+h2.with-class.second-class: span Text
+h2.with-class.second-class: span.with-class Text
+h2.with-class.second-class: span.with-class.hover:class Text
+h2.with-class.second-class: span.with-class.cd-1/2 Text
+h2: span.class.class Text
+h2: span.class attributes="value" Text
+.with-class: .single-class data-attribute="value" Text
+.-with-class.double-class: sec-dsds.-class-and.additional.class attrubute="value" Text here
+
 
 / Attributes
 div quoted="attribute"
